@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 104.0, 1302.0, 689.0 ],
+		"rect" : [ 529.0, 147.0, 884.0, 689.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,18 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 495.0, 357.0, 281.0, 33.0 ],
+					"text" : "Sending both modilation index and harmonicity ratio as signal makes it easy to control with LFO"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-55",
 					"maxclass" : "comment",
@@ -74,8 +86,9 @@
 			}
 , 			{
 				"box" : 				{
+					"format" : 6,
 					"id" : "obj-45",
-					"maxclass" : "number",
+					"maxclass" : "flonum",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
@@ -391,7 +404,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 162.5, 146.0, 54.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Duration"
 				}
 
@@ -403,7 +415,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 141.0, 123.0, 50.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Velocity"
 				}
 
@@ -489,8 +500,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 70.0, 279.0, 106.0, 22.0 ],
-					"text" : "poly~ FMSynth 16"
+					"patching_rect" : [ 71.0, 279.0, 105.0, 22.0 ],
+					"text" : "poly~ FMPoly~ 16"
 				}
 
 			}
@@ -705,6 +716,13 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "FMPoly~.maxpat",
+				"bootpath" : "~/ISU/classes_19spring/ATK320-Max/poly~tutorial/4",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "FMSynth.maxpat",
 				"bootpath" : "~/ISU/classes_19spring/ATK320-Max/poly~tutorial/4",
 				"patcherrelativepath" : ".",
