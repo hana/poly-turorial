@@ -5,4 +5,4 @@
 1. what's `poly~`
 2. Controlling `poly~`
 3. Getting into Polyphonic Synthesizer
-4. Poliphonic FM synth
+4. Polyphonic FM synth
